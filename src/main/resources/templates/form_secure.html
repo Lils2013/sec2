@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <form action="#" th:action="@{/secure}" th:object="${personForm}" method="post">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" th:field="*{name}" /></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+        <p th:text="'Result: ' + ${name}" />
+    </body>
+</html>
